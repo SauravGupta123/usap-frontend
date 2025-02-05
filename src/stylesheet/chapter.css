@@ -1,0 +1,35 @@
+.grid-school,
+.grid-college {
+    margin-bottom: 20px;
+    margin-left:10%;
+    /* Adjust the value as needed */
+}
+
+/* Add this to your external CSS file */
+.card-school,
+.card-college {
+    padding-left: 20px;
+    margin-left: 40%;
+    /* Adjust the value as needed */
+}
+.student-card {
+   margin-left: 15% ;
+    display: flex;
+    justify-content: center;
+
+    max-width: 70%;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+    /* Replace with your desired light color */
+}
+.college-card {
+    margin-top: 2%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+
+    max-width: 70%;
+}
+
