@@ -110,8 +110,8 @@ function NavBar() {
 
 
       <img
-        className='h-[70px] Tablet:h-[60px] relative bottom-1'
-        src='/HomePageImages/NavBarImages/ISAF.png'
+        className='h-[70px] Tablet:h-[90px] relative top-2'
+        src='/HomePageImages/NavBarImages/USAP_logo.png'
         alt='logo'
         onClick={() => {
           navigate('/');
@@ -195,8 +195,8 @@ function NavBar() {
         Team
       </NavLink>
       <NavLink
-        to='/gallery'
-        // to='/comingsoon'
+        // to='/gallery'
+        to='/comingsoon'
         activeStyle='active'
         className='w-auto px-3 h-[43px] hidden Laptop-lg:flex items-center justify-center font-poppins font-medium text-base rounded-[32px] '
         onMouseOver={handleMouseOver}
@@ -413,8 +413,8 @@ function NavBar() {
           </NavLink>
 
           <NavLink
-            to='/gallery'
-            // to='/comingsoon'
+            // to='/gallery'
+            to='/comingsoon'
             activeStyle='active'
             className='w-auto px-4 h-[43px] flex items-center justify-center font-poppins font-medium text-base rounded-[32px] '
             onMouseOver={handleMouseOver}

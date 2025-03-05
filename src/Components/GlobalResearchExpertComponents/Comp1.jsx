@@ -1,54 +1,77 @@
 import React from 'react';
-
+import userLogo from '../../Assets/userLogo.png';
 const expertsData = [
   {
     id: 1,
-    name: 'Kartik Panday',
-    image: '/GlobalResearchExpertImages/kartikey.png',
+    name: 'John Doe',
+    image: userLogo,
     role: 'PhD Candidate',
     field: 'Nano Science / Material Chemistry',
     country: 'France',
   },
   {
     id: 2,
-    name: 'Urcel Kalenga',
-    image: '/GlobalResearchExpertImages/urcel.jpg',
-    role: 'PostDoc',
-    field: 'GIS and remote sensing',
-    country: 'France',
+    name: 'Millar Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'IT',
+    country: 'USA',
   },
+  
   {
     id: 3,
-    name: 'Mehtab Alam SYED',
-    image: '/GlobalResearchExpertImages/Mehtab.jpg',
-    role: 'PhD Student',
-    field: 'Epidemiology (One Health), Text Mining, NLP, Information Retrieval',
-    country: 'France',
+    name: 'Jenny Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'Data Science',
+    country: 'Germany',
   },
   {
     id: 4,
-    name: 'Jasmine P Jacob',
-    image: '/GlobalResearchExpertImages/Jasmin.jpg',
-    role: 'PhD student at University of Tours, France',
-    field: 'Thermoelectric application (Chemistry)',
-    country: 'France',
+    name: 'Doe Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'Astronomy',
+    country: 'Australia',
   },
   {
     id: 5,
-    name: 'Balasai Vanukuri',
-    image: '/GlobalResearchExpertImages/Balasai.png',
-    role: 'PhD Student',
-    field: 'Economics',
+    name: 'John Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'Nano Science / Material Chemistry',
     country: 'France',
   },
   {
     id: 6,
-    name: 'Pierre Vendé',
-    image: '/GlobalResearchExpertImages/Pierre.png',
-    role: 'PhD student, Non-Tenured Teaching and Research Associate',
-    field: 'Operation research, Optimization, Sustainable transportation',
-    country: 'France',
+    name: 'Millar Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'IT',
+    country: 'USA',
   },
+  
+  {
+    id: 7,
+    name: 'Jenny Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'Data Science',
+    country: 'Germany',
+  },
+  {
+    id: 8,
+    name: 'Doe Doe',
+    image: userLogo,
+    role: 'PhD Candidate',
+    field: 'Astronomy',
+    country: 'Australia',
+  },
+
+  
+
+  
+  
 ];
 
 function ExpertCard({ expert }) {
@@ -71,7 +94,7 @@ function ExpertCard({ expert }) {
         {expert.field}
       </p>
       <div className='flex flex-row justify-around items-center space-x-2'>
-        <img src='/GlobalResearchExpertImages/France.svg' alt={expert.country} />
+   
         <p className='text-white font-poppins font-medium text-lg'>
           {expert.country}
         </p>
@@ -88,7 +111,7 @@ function Comp1() {
     <div className='w-full h-auto space-y-6 pt-8'>
       <div className='flex flex-col w-full items-center justify-center space-y-4 px-4'>
         <h6 className="text-white font-poppins font-extrabold text-xl sm:text-2xl lg:text-4xl px-4 sm:px-8 lg:px-16 tracking-wide bg-[#C62828] p-2 rounded-full shadow-md text-center">
-          Our France Research Experts
+          Our Research Experts
         </h6>
         <p className='text-black font-poppins font-normal text-lg lg:text-xl text-center max-w-3xl'>
           Our experienced experts help you advance towards your desired outcomes.

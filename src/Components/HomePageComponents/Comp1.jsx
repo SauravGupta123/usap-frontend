@@ -28,7 +28,7 @@ function Comp1() {
         <div class="px-2 flex flex-wrap sm:flex-nowrap items-center justify-center sm:items-start sm:justify-between h-auto sm:p-4 font-medium text-center rounded-[32px] text-[#FFFFFF]">
           <a class="" href="/experts">
             <button class="align-middle select-none text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none mt-2 w-auto p-2 sm:p-4 h-auto flex items-center justify-center bg-[#1E40AF] rounded-3xl font-poppins font-medium text-sm Mobile:text-base Tablet:text-xl Laptop-lg:text-xl" type="button">
-              France Research Experts
+               Research Experts
             </button>
           </a>
 
@@ -42,8 +42,8 @@ function Comp1() {
             </p>
           </div>
 
-          <a class="" href="/research">
-            <button class="align-middle select-none text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none mt-4 w-auto p-2 sm:p-4 h-auto flex items-center justify-center bg-[#1E40AF] rounded-3xl text-[#FFFFFF] font-poppins font-medium text-sm Mobile:text-base Tablet:text-xl Laptop-lg:text-xl" type="button">
+          <a class="" href="/experts">
+            <button  class="align-middle select-none text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none mt-4 w-auto p-2 sm:p-4 h-auto flex items-center justify-center bg-[#1E40AF] rounded-3xl text-[#FFFFFF] font-poppins font-medium text-sm Mobile:text-base Tablet:text-xl Laptop-lg:text-xl" type="button">
               Research and Innovation
             </button>
           </a>

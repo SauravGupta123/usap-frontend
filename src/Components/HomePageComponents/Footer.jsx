@@ -11,24 +11,12 @@ function Footer({ hideJoinNow }) {
   };
   return (
     <div className='w-full h-auto  sapce-y-10'>
-      {!hideJoinNow && (
-        <div className='bg-[#F8F8F8] w-full h-auto py-8  flex flex-col Tablet:flex-row justify-around items-center Tablet:space-x-12'>
-          <p className='font-poppins font-normal text-lg Tablet:text-4xl'>
-            Become a USAP Member For Free
-          </p>
-          <button onClick={() => {
-            navigate('/register');
-            window.scrollTo(0, 0); // This will scroll to the top of the page
-          }} className='text-[#F8F8F8] bg-[#051731] w-[150px] Tablet:w-[200px] h-[40px] Tablet:h-[60px] rounded-[50px] font-bold text-base Tablet:text-2xl'>
-            Join USAP
-          </button>
-        </div>
-      )}
+     
       <div className='bg-[#D9E0EA] w-full h-auto Laptop-sm:h-[75%] px-0 Laptop-sm:px-6 space-y-3 pb-8'>
         <div className='flex flex-col Laptop-sm:flex-row justify-between items-start Laptop-sm:space-x-8'>
           <div className='bg h-[80%] w-full Laptop-sm:w-[25%] px-6 flex flex-col items-center justify-center space-y-4 pb-8'>
             <img
-              src='/HomePageImages/NavBarImages/ISAF.png'
+              src='/HomePageImages/NavBarImages/USAP_logo.png'
               alt='logo'
               onClick={() => {
                 navigate('/');
@@ -39,7 +27,7 @@ function Footer({ hideJoinNow }) {
               }}
             />
             <p className='font-poppins font-medium text-sm'>
-              Indian Student  Assistance Portal (USAP), is a portal that aims to provide support and guidance for Indian students in France.
+              Universal Student  Assistance Portal (USAP), is a portal that aims to provide support and guidance for Indian students in France.
             </p>
             <div className='w-full flex flex-col items-start justify-center space-y-2'>
               <p className='font-poppins font-medium text-base '>Follow Us</p>
@@ -202,7 +190,7 @@ function Footer({ hideJoinNow }) {
 
 
                 <div className='flex gap-3'>
-                  <a href="mailto:info@isafrance.org" className='flex items-center gap-3'>
+                  <a href="mailto:er.sauravgpt@gmail.com" className='flex items-center gap-3'>
                     <img src="/HomePageImages/Comp5-Images/gmail.png" className='w-4 h-4 inline self-center' alt="gmail" />
                     <p className='font-poppins font-bold text-sm Tablet:text-base text-black'>
                      test@gmail.com
@@ -223,7 +211,7 @@ function Footer({ hideJoinNow }) {
                 <div className="flex gap-3">
                   <img src="/HomePageImages/Comp5-Images/location.png" className='w-4 h-4 inline self-center' alt="location" />
                   <p className='font-poppins font-bold text-sm Tablet:text-base  text-black'>
-                    Paris, France
+                    New Delhi, India
                   </p>
 
                 </div>
@@ -257,16 +245,13 @@ function Footer({ hideJoinNow }) {
                 Contact
               </Link> */}
             
-            <Link to='/terms-&-conditions' onClick={scrollToTop}>
-              {/* <Link to='/comingsoon' onClick={scrollToTop}> */}
+            <Link to='/comingsoon' onClick={scrollToTop}>
               Terms & Conditions
             </Link>
-            <Link to='/privacy-policy' onClick={scrollToTop}>
-              {/* <Link to='/comingsoon' onClick={scrollToTop}> */}
+            <Link to='/comingsoon' onClick={scrollToTop}>
               Privacy Policy
             </Link>
-            <Link to='/refund-&-cancellation-policy' onClick={scrollToTop}>
-              {/* <Link to='/comingsoon' onClick={scrollToTop}> */}
+            <Link to='/comingsoon' onClick={scrollToTop}>
               Refund & Cancellation Policy
             </Link>
           </div>

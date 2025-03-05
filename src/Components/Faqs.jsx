@@ -19,16 +19,13 @@ const FAQs = () => {
     const faqData = [
         {
             question: "What is the Universal Student Assistance Portal (USAP)?",
-            answer: "The Universal Student Assistance Portal (USAP) is a support platform tailored for Indian students in Abroad, offering assistance with administrative processes, scholarships, accommodation, career guidance, daily life, and more."
+            answer: "The Universal Student Assistance Portal (USAP) is a support platform tailored for International students in Abroad, offering assistance with administrative processes, scholarships, accommodation, career guidance, daily life, and more."
         },
         {
             question: "Who can use USAP?",
-            answer: "Any Indian student planning to study or currently studying in Abroad can access USAP services. It covers students at all academic levels and institutions across Abroad."
+            answer: "Any International student planning to study or currently studying in Abroad can access USAP services. It covers students at all academic levels and institutions across Abroad."
         },
-        {
-            question: "What kind of administrative support does USAP offer?",
-            answer: "USAP helps with visa applications, Carte de Séjour (for students, interns, APS, salaried professionals, passport talent), residency cards (10 years), French nationality processes, and OCI card applications."
-        },
+
         {
             question: "Can USAP help with scholarships?",
             answer: "Yes, USAP provides guidance on scholarships available before admission, during your studies in Abroad, and for higher studies within Abroad. This includes scholarships for various academic levels and fields of study."
@@ -39,15 +36,15 @@ const FAQs = () => {
         },
         {
             question: "Does USAP provide information on student loans and financing?",
-            answer: "USAP connects students with French banks offering education loans and other financial solutions to manage tuition fees and living expenses during their studies."
+            answer: "USAP connects students with foreign banks offering education loans and other financial solutions to manage tuition fees and living expenses during their studies."
         },
         {
             question: "What daily life services does USAP cover?",
             answer: "USAP supports students with essential services like opening a bank account, applying for CAF (housing allowance), understanding social security, using Navigo (public transport), OFFI registration, CVEC (student contribution), and accessing CROUS (student housing, food services)."
         },
         {
-            question: "Are French language classes available through USAP?",
-            answer: "Yes, USAP provides information about language classes and learning resources to help students improve their French language skills, which are essential for daily life and career opportunities in Abroad."
+            question: "Are foreign language classes available through USAP?",
+            answer: "Yes, USAP provides information about language classes and learning resources to help students improve their foreign language skills, which are essential for daily life and career opportunities in Abroad."
         },
         {
             question: "Does USAP offer career guidance and job search assistance?",

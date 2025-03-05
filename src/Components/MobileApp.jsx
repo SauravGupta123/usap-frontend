@@ -1,7 +1,7 @@
 import React from 'react';
 import isapMobile from '/isapPhone.jpg';
 import playStore from '/playstore.svg';
-import isapLogo from '/HomePageImages/NavBarImages/ISAF.png';
+import isapLogo from '/HomePageImages/NavBarImages/USAP_logo.png';
 
 const MobileApp = () => {
   return (
