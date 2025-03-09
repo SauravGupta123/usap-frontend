@@ -1,5 +1,5 @@
 import React from 'react';
-import userLogo from '../../Assets/userLogo.png';
+import userLogo from '../../Assets/userlogo.png';
 const expertsData = [
   {
     id: 1,
