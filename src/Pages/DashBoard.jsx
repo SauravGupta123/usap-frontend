@@ -427,13 +427,13 @@ const DashBoard = () => {
                     <div className='space-y-1'>
                       <div className='flex flex-col sm:flex-row sm:items-center gap-1'>
                         <span className='text-sm md:text-base font-medium'>Email:</span>
-                        <a href='mailto:info@isafrance.org' className='text-sm md:text-base text-blue-600 underline break-all'>
-                          info@isafrance.org
+                        <a href='mailto:sauravgpt123@gmail.com' className='text-sm md:text-base text-blue-600 underline break-all'>
+                          sauravgpt123@gmail.com
                         </a>
                       </div>
                       <div className='flex flex-col sm:flex-row sm:items-center gap-1'>
                         <span className='text-sm md:text-base font-medium'>Phone:</span>
-                        <span className='text-sm md:text-base'>+33 745379285</span>
+                        <span className='text-sm md:text-base'>+91 XXXXXXXXXX</span>
                       </div>
                     </div>
                   </div>

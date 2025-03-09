@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
-import isafLogo from '../Assets/logo.png'
+import isafLogo from '/HomePageImages/NavBarImages/USAP_logo.png'
 const AdditionalInfo = () => {
   const [formData, setFormData] = useState({
     googleId: '',
