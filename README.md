@@ -49,6 +49,7 @@ USAP is a **one-stop solution** for students planning to study abroad. It offers
 **Dashboard Preview**
 ------------
 <img width="1461" alt="Screenshot 2025-03-09 at 8 07 51 PM" src="https://github.com/user-attachments/assets/031eea90-9bde-4d82-8c8c-a3c6a3ac500b" />
+<img width="1412" alt="Screenshot 2025-03-09 at 8 06 08 PM" src="https://github.com/user-attachments/assets/59d69e50-2b4d-419a-828d-3a18191b452a" />
 <img width="1460" alt="Screenshot 2025-03-09 at 8 10 20 PM" src="https://github.com/user-attachments/assets/c04f6d03-e047-4132-abd5-f145a38f4729" />
 <img width="1446" alt="Screenshot 2025-03-09 at 8 10 35 PM" src="https://github.com/user-attachments/assets/abea2c90-a65f-442b-b4c2-82e47da55541" />
 <img width="1461" alt="Screenshot 2025-03-09 at 8 10 48 PM" src="https://github.com/user-attachments/assets/9edbb4b4-a3dc-43f0-a65e-c4618304ef87" />
@@ -131,5 +132,5 @@ npm run dev
 For queries, contributions, or feedback, reach out via:\
 📧 [Email](mailto:er.sauravgpt@gmail.com)\
 🔗 [LinkedIn](https://www.linkedin.com/in/srv-gupta/)\
-💻 [GitHub](https://github.com/SauravGupta123)<img width="1412" alt="Screenshot 2025-03-09 at 8 06 08 PM" src="https://github.com/user-attachments/assets/59d69e50-2b4d-419a-828d-3a18191b452a" />
+💻 [GitHub](https://github.com/SauravGupta123)
 
