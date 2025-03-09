@@ -1,5 +1,5 @@
 import React from 'react';
-import isapMobile from '/isapPhone.jpg';
+// import isapMobile from '/isapPhone.jpg';
 import playStore from '/playstore.svg';
 import isapLogo from '/HomePageImages/NavBarImages/USAP_logo.png';
 
@@ -49,11 +49,7 @@ const MobileApp = () => {
 
         <div className="mt-8 lg:mt-0">
           <div className="w-[260px] sm:w-[280px] md:w-[280px] md:h-[420px] mx-auto">
-            <img 
-              src={isapMobile} 
-              alt="Mobile App Interface"
-              className="w-full h-full object-contain" 
-            />
+            
           </div>
         </div>
       </section>

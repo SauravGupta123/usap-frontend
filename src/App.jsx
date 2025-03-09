@@ -10,26 +10,25 @@ import Gallery from './Pages/Gallery';
 import  WhyUSAP from './Pages/WhyUsap.jsx';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import JoiningPage from './Pages/JoiningPage';
-import Intexp from './Pages/Intexp';
+
+
 import ResearchInnovation from './Pages/ResearchInnovation';
 import { useState, useEffect } from 'react';
 import GoogleSignIn from './Components/GoogleLogin';
 import GlobalResearchExpert from './Pages/GlobalResearchExpert';
 import ResearchAndInnovation from './Pages/ResearchAndInnovation';
 import DashBoard from './Pages/DashBoard';
-import Certificates from './Pages/Certificates';
+
 import TermsAndConditions from './Pages/TermsAndConditions';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import RefundAndCancellation from './Pages/RefundAndCancellation';
 import Contact from './Pages/Contact';
 import DronePage from './Pages/DronePage';
-import IOTPage from './Pages/IOTPage';
-import IotPaper from './Components/ResearchPages/IOTPaper/IotPaper';
-import JowerPaper from './Components/ResearchPages/JowerPaper/jowerPaper';
+
+
 import Fundings from './Pages/Fundings';
 import EditProfile from './Pages/EditProfile';
-import axios from 'axios';
+
 import PaymentSuccess from './Pages/PaymentSuccess';
 import PaymentFailed from './Pages/PaymentFailed';
 import './index.css';
@@ -75,28 +74,27 @@ const App = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='/services' element={<Services />} />
 
-        <Route path='/communities' element={<Communities />} />
+        {/* <Route path='/communities' element={<Communities />} /> */}
         <Route path='/membership' element={<Membership />} />
-        <Route path='membership/application' element={<JoiningPage />} />
+        {/* <Route path='membership/application' element={<JoiningPage />} /> */}
         <Route path='/team' element={<TeamPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/events' element={<Events />} />
         <Route path='/gallery' element={<ComingSoonPage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        {/* <Route path="/experts" element={<Intexp />} /> */}
-        {/* new route to global research expert page */}
+ 
         <Route path='/experts' element={<GlobalResearchExpert />} />
         <Route path='/WhyUSAP' element={< WhyUSAP />} />
         {/* <Route path="/research" element={<ResearchInnovation />} /> */}
         {/* new route to research and innovation page with new design */}
-        <Route path='/research' element={<ResearchAndInnovation />} />
+        {/* <Route path='/research' element={<ResearchAndInnovation />} /> */}
         <Route path='/profile' element={<DashBoard />} />
 
 
-        <Route path='/research/jower-research-paper' element={<JowerPaper />} />
+        {/* <Route path='/research/jower-research-paper' element={<JowerPaper />} />
         <Route path='/research/iot-kit-paper' element={<IotPaper />} />
-        <Route path='/certificates' element={<Certificates />} />
+        <Route path='/certificates' element={<Certificates />} /> */}
         <Route path='/terms-&-conditions' element={<TermsAndConditions />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route
@@ -107,7 +105,7 @@ const App = () => {
         <Route path='/admin/profile/:id' element={<SubAdminPortal />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/dronepage' element={<DronePage />} />
-        <Route path='/iot-page' element={<IOTPage />} />
+        
         <Route path='/fundings' element={<Fundings />} />
         <Route path='/profile/edit' element={<EditProfile />} />
         <Route path='/payment/success' element={<PaymentSuccess />} />

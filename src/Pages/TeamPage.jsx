@@ -1,22 +1,9 @@
 import React from 'react';
-import Header from '../Components/Header';
+
 import Team from '../Components/Team';
 import { Typography } from '@material-tailwind/react';
 import Footer from '../Components/HomePageComponents/Footer';
-import anmolImg from '../Assets/drive-download/Anmol Garg.png';
-import ashishImg from '../Assets/drive-download/ashish.png';
-import pravienImg from '../Assets/drive-download/praveen sir.png';
-import img4 from '../Assets/drive-download/Nandini.png';
-import img3 from '../Assets/drive-download/Gokul.png';
-import img5 from '../Assets/drive-download/Ayush.png';
-import img6 from '../Assets/drive-download/Abhinav.png';
-import img7 from '../Assets/drive-download/Pravin.png';
-import img8 from '../Assets/drive-download/Nitish Narula.png';
-import img9 from '../Assets/drive-download/amit chauhan.png';
-import img10 from '../Assets/drive-download/Ankit Panigrahi.png';
-import img11 from '../Assets/drive-download/profile-pic.png';
-import img12 from '../Assets/drive-download/Harsh_Mittal.png';
-import img13 from '../Assets/drive-download/Shobhit Kundu.png';
+
 // import UnderConstruction from '../Components/UnderConstruction';
 import NavBar from '../Components/HomePageComponents/NavBar';
 import team1 from '../Assets/svg 1.png';
