@@ -66,13 +66,8 @@ const Login = () => {
 
 
   const handlePasswordValidation = () => {
-    if (password !== '' && password.length < 8) {
-      setValidation({ ...validation, checkPassword: true });
-      setErrorMsg({ ...errorMsg, passwordMsg: 'Invalid Password!' });
-    } else {
-      setValidation({ ...validation, checkPassword: false });
-      setErrorMsg({ ...errorMsg, passwordMsg: '' });
-    }
+    
+     
   };
 
   useEffect(() => {

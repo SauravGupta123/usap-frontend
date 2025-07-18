@@ -326,7 +326,7 @@ const EditProfile = () => {
                 {`${userDetails.firstName} ${userDetails.lastName}`}
               </Typography>
               <Typography variant="h6" className="text-gray-600">
-                ISAF ID: {userDetails.ISAFid}
+                USAP ID: {userDetails.ISAFid}
               </Typography>
             </div>
           </div>

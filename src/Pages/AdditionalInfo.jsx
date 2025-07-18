@@ -158,7 +158,7 @@ const AdditionalInfo = () => {
               className='focus:shadow-lg'
             >
               <Option value='India'>India</Option>
-              <Option value='France'>France</Option>
+              <Option value='France'>Other</Option>
               {/* Add more options as needed */}
             </Select>
             <Select

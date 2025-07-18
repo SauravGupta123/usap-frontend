@@ -414,7 +414,7 @@ const Register = () => {
                     className='focus:shadow-lg'
                   >
                     <Option value='India'>India</Option>
-                    <Option value='France'>France</Option>
+                    <Option value='France'>Other</Option>
                     {/* Add more options as needed */}
                   </Select>
                 </div>
@@ -512,9 +512,7 @@ const Register = () => {
             </div>
           </div>
         </div>
-        <ToastContainer
-          className="!w-fit !max-w-[90%] md:!max-w-none !left-auto !top-2 text-sm md:text-base"
-        />
+       
       </div>
   
 

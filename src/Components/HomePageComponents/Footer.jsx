@@ -90,6 +90,10 @@ function Footer({ hideJoinNow }) {
                 <Link to='/comingsoon' onClick={scrollToTop}>
                   Certificates
                 </Link>
+                 <Link to={`${import.meta.env.VITE_FRONTEND_URL}/admin/login`}>
+              {/* <Link to='/comingsoon' onClick={scrollToTop}> */}
+              Admin
+            </Link>
               </div>
             </div>
             <div className='w-full Tablet:w-[20%] h-[80%] space-y-4 flex flex-col items-start justify-start mt-6'>
