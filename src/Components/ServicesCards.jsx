@@ -17,30 +17,39 @@ function ServicesCards({ idx, title, description, image, imgwidth = 'w-56', imgh
   const shortDescription = description.slice(0, 100) + '...';
 
   return (
-    <div className="relative h-[33rem] flex flex-col my-6 bg-gradient-to-br from-[#3052c3] to-[#20398a] drop-shadow-xl border border-gray-300 rounded-xl w-full max-w-sm mx-auto transition-transform transform ">
-      <div className="relative  m-3 overflow-hidden text-white rounded-md flex items-center justify-center">
+    <div className="group relative h-[32rem] flex flex-col my-6 bg-white/90 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-white/20 rounded-2xl w-full max-w-sm mx-auto transition-all duration-300 hover:scale-105 hover:-translate-y-2">
+      {/* Image Section */}
+      <div className="relative m-4 overflow-hidden rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 p-4 h-40">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-xl"></div>
         <img 
           src={image}
           alt="card-image" 
-          className={`object-cover ${imgwidth} ${imgheight} rounded-md`} 
+          className={`object-contain max-w-full max-h-full rounded-lg transition-transform duration-300 group-hover:scale-110 relative z-10`} 
         />
       </div>
-    <div className="p-4">
-        <h6 className="mb-2 text-white text-center font-bold text-xl tracking-wide bg-gradient-to-r from-[#0297FF] to-[#00D1FF] p-2 rounded-full shadow-md">
-          {title}
-        </h6>
+      
+      {/* Content Section */}
+      <div className="p-4 flex-grow flex flex-col">
+        <div className="mb-4 text-center">
+          <h6 className="text-gray-800 font-bold text-lg lg:text-xl tracking-wide bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent p-2 rounded-xl">
+            {title}
+          </h6>
+        </div>
+        
         <div 
           ref={contentRef}
-          className={`overflow-hidden transition-all duration-250 ease-in-out ${isExpanded ? 'max-h-[1000px]' : 'max-h-20'}`}
+          className={`overflow-hidden transition-all duration-300 ease-in-out flex-grow ${isExpanded ? 'max-h-none' : 'max-h-20'}`}
         >
-          <p className="font-normal text-white text-base Tablet:text-lg leading-relaxed">
+          <p className="font-normal text-gray-700 text-sm lg:text-base leading-relaxed">
             {showFullContent ? description : shortDescription}
           </p>
         </div>
       </div>
-      <div className="px-4 pb-4 pt-0 mt-2">
+      
+      {/* Button Section */}
+      <div className="px-4 pb-4 pt-2 mt-auto">
         <button 
-          className="rounded-md bg-red-700 py-2 px-4 border border-transparent text-center text-sm text-white font-medium hover:bg-red-800"
+          className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 py-3 px-4 text-center text-sm font-semibold text-white hover:from-blue-700 hover:to-purple-700 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
           onClick={onExpandClick}
         >
           {isExpanded ? 'Show Less' : 'Read More'}

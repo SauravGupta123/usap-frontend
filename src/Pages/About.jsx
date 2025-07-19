@@ -6,6 +6,7 @@ import NavBar from '../Components/HomePageComponents/NavBar';
 
 
 import about01 from '../Assets/about01.png';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const data = {
@@ -174,9 +175,9 @@ const About = () => {
             <button className='px-8 py-4 bg-white text-blue-600 font-bold rounded-2xl hover:bg-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-lg'>
               Get Started Today
             </button>
-            <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-blue-600 transform transition-all duration-300 hover:scale-105'>
+            <Link to={'/services'} className='px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-blue-600 transform transition-all duration-300 hover:scale-105'>
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </div>
