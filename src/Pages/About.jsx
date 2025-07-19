@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Header from '../Components/Header';
+
 import Footer from '../Components/HomePageComponents/Footer';
 import { Typography } from '@material-tailwind/react';
-import Accordian from '../Components/Accordian';
+
 import NavBar from '../Components/HomePageComponents/NavBar';
-import UnderConstruction from '../Components/UnderConstruction';
-import bottle from '../Assets/bottle.png';
+
+
 import about01 from '../Assets/about01.png';
 
 const About = () => {

@@ -80,7 +80,7 @@ const App = () => {
         <Route path='/team' element={<TeamPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/events' element={<Events />} />
-        <Route path='/gallery' element={<ComingSoonPage />} />
+        <Route path='/gallery' element={<Gallery />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
  
@@ -104,12 +104,12 @@ const App = () => {
         <Route path='/admin/main/profile' element={<AdminPortal />} />
         <Route path='/admin/profile/:id' element={<SubAdminPortal />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/dronepage' element={<DronePage />} />
+        {/* <Route path='/dronepage' element={<DronePage />} /> */}
         
         <Route path='/fundings' element={<Fundings />} />
         <Route path='/profile/edit' element={<EditProfile />} />
-        <Route path='/payment/success' element={<PaymentSuccess />} />
-        <Route path='/payment/failue' element={<PaymentFailed />} />
+        {/* <Route path='/payment/success' element={<PaymentSuccess />} />
+        <Route path='/payment/failue' element={<PaymentFailed />} /> */}
         <Route path='/additionalInfo' element={<AdditionalInfo />} />
         <Route path='/comingsoon' element={<ComingSoonPage/>} />
         <Route path='/admin/login' element={<AdminLogin/>} />

@@ -17,10 +17,10 @@ import img7 from '../Assets/gallery/img7.jpg';
 
 const photos = [
   // { src: img1 },
-  { src: img2 },
+  { src: img1 },
   { src: img3 },
   { src: img4 },
-  // { src: img5 },
+  { src: img5 },
   { src: img6, },
   { src: img7}
 ];

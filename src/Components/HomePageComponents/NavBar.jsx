@@ -186,7 +186,7 @@ function NavBar() {
       </NavLink>
       <NavLink
         // to='/team'
-        to='/comingsoon'
+        to='/team'
         activeStyle='active'
         className='w-auto px-3 h-[43px] hidden Laptop-lg:flex items-center justify-center font-poppins font-medium text-base rounded-[32px]   '
         onMouseOver={handleMouseOver}
