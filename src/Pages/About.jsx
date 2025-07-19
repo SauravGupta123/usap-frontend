@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import Footer from '../Components/HomePageComponents/Footer';
 import { Typography } from '@material-tailwind/react';
 
@@ -18,45 +17,30 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className='flex flex-col items-center w-full min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50'>
       <NavBar />
-      {/* <div className='h-auto w-[80%]'>
-        <div className='h-full w-full'>
-          <div className='text-center bg-about-image bg-cover bg-no-repeat w-full h-auto flex items-center justify-around'>
-            <div className='relative -top-20 right-10 bg-[#E3EEEF] w-80 h-auto py-2 flex items-center justify-center px-4 bg-opacity-40 rounded-md'>
-              <Typography variant='h2' color='black' className='px-4 py-2'>
-                About
-              </Typography>
-            </div>
-
-            <div className='relative left-10 top-[6rem] pb-[20rem]'>
-              <div className=''>
-                <Accordian data={data} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  */}
-      <div className='w-auto px-[5rem] sm:px-[9rem] md:px-[12rem] lg:px-[16rem] h-[70px] sm:h-[80px] lg:h-[100px] bg-[#1E40AF] flex items-center justify-center rounded-[2rem] mb-12 relative top-16'>
-        <Typography
-          variant='h1'
-          color='white'
-          className=' text-center text-[28px] sm:text-[33px] lg:text-[40px] tracking-tighter font-bold'
-        >
-          About Us
-        </Typography>
-      </div>
-      <div className='w-[90%] flex items-center justify-center relative mb-10'>
-        {/* <img
-          src={bottle}
-          alt='teamlogo'
-          className='w-[14rem] sm:w-[16rem] md:w-[18rem] lg:w-[22rem] z-10 absolute -top-[4rem] sm:-top-[5.5rem] md:-top-[7rem] lg:-top-[9rem] xl:left-[calc(50vw-42rem)] lg:left-[calc(50vw-40rem)] md:left-[calc(50vw-31.5rem)] sm:left-[calc(50vw-25rem)] left-[calc(50vw-20rem)]'
-        /> */}
-        <div className='w-[35rem] sm:w-[40rem] md:w-[50rem] lg:w-[60rem] xl:w-[65rem] h-[70px] sm:h-[70px] lg:h-[80px] bg-[#284fce] flex items-center justify-center rounded-[3rem] relative top-14'>
+      
+      {/* Hero Section */}
+      <div className='w-full relative overflow-hidden mb-16'>
+        <div className='absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10'></div>
+        <div className='relative z-10 w-auto px-[5rem] sm:px-[9rem] md:px-[12rem] lg:px-[16rem] h-[70px] sm:h-[80px] lg:h-[100px] bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] flex items-center justify-center rounded-[2rem] mb-12 mt-16 shadow-2xl transform transition-all duration-500 hover:shadow-3xl hover:scale-[1.02] animate-fade-in'>
           <Typography
             variant='h1'
             color='white'
-            className='text-center text-[18px] sm:text-[25px] md:text-[33px] lg:text-[40px] tracking-tighter font-bold ml-[calc(50vw-13rem)] sm:ml-8 md:marker:l-4 lg:ml-0 '
+            className='text-center text-[28px] sm:text-[33px] lg:text-[40px] tracking-tighter font-bold'
+          >
+            About Us
+          </Typography>
+        </div>
+      </div>
+
+      {/* Animated Title Section */}
+      <div className='w-[90%] flex items-center justify-center relative mb-16 animate-slide-up' style={{animationDelay: '0.2s'}}>
+        <div className='w-full max-w-6xl h-auto bg-gradient-to-r from-[#284fce] via-[#1E40AF] to-[#3B82F6] flex items-center justify-center rounded-[3rem] py-6 px-8 shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]'>
+          <Typography
+            variant='h1'
+            color='white'
+            className='text-center text-[18px] sm:text-[25px] md:text-[30px] lg:text-[36px] tracking-tight font-bold leading-tight'
           >
             We are Providing Quality Services Here
           </Typography>
@@ -73,66 +57,131 @@ const About = () => {
           </Typography>
         </div>
       </div>
-      <div className='flex flex-col 2xl:flex-row items-center justify-between w-[80%] mb-10 gap-6 2xl:gap-14'>
-        <img
-          src={about01}
-          alt='iot'
-          className='w-[22rem] sm:w-[25rem] xl:w-[32rem] rounded-lg'
-        />
-   <div className='bg-custom-gradient w-full xl:w-[80%] rounded-3xl p-8 space-y-6'>
-  {/* Mission and Vision Section */}
-  <div className='space-y-3'>
-    <Typography 
-      variant='h5' 
-      className='text-white font-semibold text-xl md:text-2xl border-b border-white/20 pb-2'
-    >
-      Mission and Vision
-    </Typography>
-    <Typography
-      variant='paragraph'
-      color='white'
-      className='font-light leading-relaxed text-[12px] md:text-[14px] 2xl:text-[16px]'
-    >
-      Our mission at USAP is to empower Indian students and professionals in France by providing comprehensive support that simplifies their journey, from administrative support, social integration, to career opportunities. We envision becoming the leading resource for Indian students free of cost. We fostering a vibrant community where members can thrive academically and professionally, and seamlessly integrate into French society and culture.
-    </Typography>
-  </div>
-
-  {/* USAP at a glance Section */}
-  <div className='space-y-3'>
-    <Typography 
-      variant='h5' 
-      className='text-white font-semibold text-xl md:text-2xl border-b border-white/20 pb-2'
-    >
-      USAP at a glance
-    </Typography>
-    <Typography
-      variant='paragraph'
-      color='white'
-      className='font-light leading-relaxed text-[12px] md:text-[14px] 2xl:text-[16px]'
-    >
-      USAP is your gateway to navigating the vibrant world of student life in France
-    </Typography>
-  </div>
-
-  {/* Awards Section */}
-  <div className='space-y-3'>
-    <Typography 
-      variant='h5' 
-      className='text-white font-semibold text-xl md:text-2xl border-b border-white/20 pb-2'
-    >
-      Awards
-    </Typography>
-    <Typography
-      variant='paragraph'
-      color='white'
-      className='font-light leading-relaxed text-[12px] md:text-[14px] 2xl:text-[16px]'
-    >
-      By giving out awards, USAP motivates students and mentors to make significant contributions in relevant sectors for the advancement of society.
-    </Typography>
-  </div>
-</div>
+      {/* Main Content Section */}
+      <div className='w-[90%] max-w-7xl h-auto mb-16 animate-slide-up' style={{animationDelay: '0.3s'}}>
+        <div className='flex flex-col items-center px-4 py-8 bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20'>
+          <div className='max-w-4xl text-center'>
+            <Typography
+              variant='h3'
+              className='text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6'
+            >
+              Welcome to USAP
+            </Typography>
+            <Typography
+              variant='h5'
+              color='black'
+              className='font-light tracking-wide text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed text-gray-700'
+            >
+              USAP is a dedicated community focused on providing help and assistance to Indian students in France. USAP makes students lives easier in France so that they can focus on their professional careers and have successful jobs in France. USAP provides students with the right guidance and direction, whether it is administrative support, securing scholarships, social integration, or career opportunities. We understand the complexities of adjusting to a new country, and our team is here to ensure you have the necessary resources and advice for a successful journey in France.
+            </Typography>
+          </div>
+        </div>
       </div>
-      <Footer />
+
+      {/* Image and Info Cards Section */}
+      <div className='flex flex-col 2xl:flex-row items-center justify-between w-[90%] max-w-7xl mb-16 gap-8 2xl:gap-16 animate-slide-up' style={{animationDelay: '0.4s'}}>
+        <div className='group relative transform transition-all duration-300 hover:scale-105'>
+          <img
+            src={about01}
+            alt='About USAP'
+            className='w-[22rem] sm:w-[25rem] xl:w-[32rem] rounded-2xl shadow-2xl transition-all duration-300 group-hover:shadow-3xl'
+          />
+          <div className='absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+        </div>
+
+        <div className='bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 w-full xl:w-[80%] rounded-3xl p-8 space-y-8 shadow-2xl transform transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]'>
+          {/* Mission and Vision Section */}
+          <div className='space-y-4 transform transition-all duration-300 hover:translate-x-2'>
+            <div className='flex items-center space-x-3'>
+              <div className='w-2 h-8 bg-white rounded-full'></div>
+              <Typography 
+                variant='h5' 
+                className='text-white font-bold text-xl md:text-2xl'
+              >
+                Mission and Vision
+              </Typography>
+            </div>
+            <Typography
+              variant='paragraph'
+              color='white'
+              className='font-light leading-relaxed text-[13px] md:text-[15px] 2xl:text-[17px] pl-5 border-l-2 border-white/30'
+            >
+              Our mission at USAP is to empower Indian students and professionals in France by providing comprehensive support that simplifies their journey, from administrative support, social integration, to career opportunities. We envision becoming the leading resource for Indian students free of cost. We foster a vibrant community where members can thrive academically and professionally, and seamlessly integrate into French society and culture.
+            </Typography>
+          </div>
+
+          {/* USAP at a glance Section */}
+          <div className='space-y-4 transform transition-all duration-300 hover:translate-x-2'>
+            <div className='flex items-center space-x-3'>
+              <div className='w-2 h-8 bg-white rounded-full'></div>
+              <Typography 
+                variant='h5' 
+                className='text-white font-bold text-xl md:text-2xl'
+              >
+                USAP at a Glance
+              </Typography>
+            </div>
+            <Typography
+              variant='paragraph'
+              color='white'
+              className='font-light leading-relaxed text-[13px] md:text-[15px] 2xl:text-[17px] pl-5 border-l-2 border-white/30'
+            >
+              USAP is your gateway to navigating the vibrant world of student life in France. We bridge the gap between dreams and reality, providing the tools and support you need to succeed.
+            </Typography>
+          </div>
+
+          {/* Awards Section */}
+          <div className='space-y-4 transform transition-all duration-300 hover:translate-x-2'>
+            <div className='flex items-center space-x-3'>
+              <div className='w-2 h-8 bg-white rounded-full'></div>
+              <Typography 
+                variant='h5' 
+                className='text-white font-bold text-xl md:text-2xl'
+              >
+                Awards & Recognition
+              </Typography>
+            </div>
+            <Typography
+              variant='paragraph'
+              color='white'
+              className='font-light leading-relaxed text-[13px] md:text-[15px] 2xl:text-[17px] pl-5 border-l-2 border-white/30'
+            >
+              By giving out awards, USAP motivates students and mentors to make significant contributions in relevant sectors for the advancement of society. We celebrate excellence and inspire continuous growth.
+            </Typography>
+          </div>
+        </div>
+      </div>
+
+      {/* Statistics/Features Section */}
+    
+
+      {/* Call to Action Section */}
+      <div className='w-[90%] max-w-7xl mb-16 animate-slide-up' style={{animationDelay: '0.6s'}}>
+        <div className='bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-center shadow-2xl transform transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]'>
+          <Typography
+            variant='h3'
+            className='text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4'
+          >
+            Ready to Start Your Journey?
+          </Typography>
+          <Typography
+            variant='lead'
+            className='text-lg text-white/90 max-w-3xl mx-auto leading-relaxed mb-8'
+          >
+            Join thousands of Indian students who have successfully navigated their academic and professional journey in France with USAP's support.
+          </Typography>
+          <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
+            <button className='px-8 py-4 bg-white text-blue-600 font-bold rounded-2xl hover:bg-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-lg'>
+              Get Started Today
+            </button>
+            <button className='px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-blue-600 transform transition-all duration-300 hover:scale-105'>
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+     <Footer />
     </div>
   );
 };
