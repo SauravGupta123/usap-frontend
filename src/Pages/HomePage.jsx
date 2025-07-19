@@ -15,19 +15,30 @@ const HomePage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='sm:w-full'>
+    <div className='w-full min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50'>
       <NavBar />
-      <Comp1 />
-      <Comp3 />
-      {/* <Comp5 /> */}
-      <Comp2 />
-      {/* <MobileApp/> */}
-      <Comp4 />
+      
+      {/* Hero Section */}
+      <section className='animate-fade-in'>
+        <Comp1 />
+      </section>
+      
+      {/* Services Section */}
+      <section className='animate-slide-up' style={{animationDelay: '0.2s'}}>
+        <Comp3 />
+      </section>
+      
+      {/* About Section */}
+      <section className='animate-slide-up' style={{animationDelay: '0.4s'}}>
+        <Comp2 />
+      </section>
+      
+      {/* Features Section */}
+      <section className='animate-slide-up' style={{animationDelay: '0.6s'}}>
+        <Comp4 />
+      </section>
+      
       <Footer />
-      {/* <Header /> */}
-      {/* <Home /> */}
-      {/* <CarouselComponent /> */}
-      {/* <Footer /> */}
     </div>
   );
 };

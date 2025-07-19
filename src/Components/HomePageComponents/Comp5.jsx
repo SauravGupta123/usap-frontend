@@ -5,155 +5,148 @@ import cuimg from '../../Assets/cuimg.png';
 import { NavLink } from 'react-router-dom';
 
 const Comp5 = () => {
+  const experts = [
+    {
+      name: "Kartikey Pandey",
+      role: "PhD Candidate",
+      specialization: "Nano Science / Material Chemistry",
+      image: "/GlobalResearchExpertImages/kartikey.png",
+      linkedin: "http://www.linkedin.com/in/kartikey-pandey-b00a4316b"
+    },
+    {
+      name: "Urcel Kalenga",
+      role: "PostDoc",
+      specialization: "GIS and remote sensing",
+      image: "/GlobalResearchExpertImages/urcel.jpg",
+      linkedin: "https://www.linkedin.com/in/urcel-kalenga-793467b5/"
+    },
+    {
+      name: "Mehtab Alam SYED",
+      role: "PhD Student", 
+      specialization: "Epidemiology (One Health), Text Mining, NLP, Information Retrieval",
+      image: "/GlobalResearchExpertImages/Mehtab.jpg",
+      linkedin: "https://www.linkedin.com/in/syed-mehtab-alam-b4564a30/"
+    }
+  ];
+
   return (
-    <div>
-      {' '}
-      <div className=' flex justify-center py-8 bg-[#ffffff] mt-2 '>
-        <div className='bg-[#DC222C] flex items-center justify-center text-center px-6 py-4 rounded-full'>
-          <p className='text-white font-poppins font-medium text-xl Laptop-lg:text-4xl'>
-            Our France Research Experts
-          </p>
-        </div>
-      </div>
-      <div className='w-full flex flex-col items-center justify-center py-4 bg-[#ffffff]'>
-        <div className='w-[95%] flex flex-col Laptop-lg:flex-row items-center justify-around space-y-6 Laptop-lg:space-y-0'>
-          <div className='bg-[#3052c3] w-full Laptop-lg:w-[25%] h-auto Laptop-lg:h-[450px] rounded-[32px] flex flex-col items-center justify-center space-y-4 p-4'>
-            <div className='rounded-full border-[6px] border-[#B88027] w-[120px] h-[120px] overflow-hidden text-black'>
-              <img
-                className='w-full h-full'
-                src='/GlobalResearchExpertImages/kartikey.png'
-                alt='kartikey'
-              />
-            </div>
-            <p className='text-white font-poppins font-medium text-xl'>
-              Kartikey Pandey
-            </p>
-            <p className='text-white font-poppins font-medium text-lg'>
-              PhD Candidate
-            </p>
-            <p className='text-white font-poppins font-medium text-lg text-center'>
-              Nano Science / Material Chemistry
-            </p>
-            <div className='flex flex-row justify-around  items-center'>
-              <img src='/GlobalResearchExpertImages/France.svg' alt='France' />
-              <p className='text-white font-poppins font-medium text-lg'>
-                France
-              </p>
-            </div>
-            <div className='flex flex-row justify-between  items-center space-x-6'>
-              <img src='/GlobalResearchExpertImages/Mail.svg' alt='mail' />
-              <a
-                href='http://www.linkedin.com/in/kartikey-pandey-b00a4216b'
-                target='_blank'
-              >
-                <img
-                  src='/GlobalResearchExpertImages/linkedin.svg'
-                  alt='linkedin'
-                />
-              </a>
+    <div className='relative w-full bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden'>
+      {/* Background Elements */}
+      <div className='absolute inset-0 bg-gradient-to-r from-slate-100/30 to-blue-100/30'></div>
+      <div className='absolute top-20 left-20 w-32 h-32 bg-slate-200 rounded-full opacity-10 animate-bounce-slow'></div>
+      <div className='absolute bottom-40 right-20 w-24 h-24 bg-blue-200 rounded-full opacity-10 animate-bounce-slow' style={{animationDelay: '1s'}}></div>
+      
+      {/* Research Experts Section */}
+      <div className='relative z-10 py-16'>
+        <div className='container mx-auto px-4'>
+          {/* Header */}
+          <div className='text-center mb-12 animate-fade-in'>
+            <div className='inline-flex items-center justify-center bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-full shadow-xl transform transition-all duration-300 hover:scale-105'>
+              <h2 className='font-bold text-xl lg:text-3xl'>
+                Our France Research Experts
+              </h2>
             </div>
           </div>
-          <div className='bg-[#3052c3] w-full Laptop-lg:w-[25%] h-auto Laptop-lg:h-[450px] rounded-[32px] flex flex-col items-center justify-center space-y-4 p-4'>
-            <div className='rounded-full border-[6px] border-[#B88027] w-[120px] h-[120px] overflow-hidden text-black'>
-              <img
-                className='w-full h-full'
-                src='/GlobalResearchExpertImages/urcel.jpg'
-                alt='urcel'
-              />
-            </div>
-            <p className='text-white font-poppins font-medium text-xl'>
-              Urcel Kalenga
-            </p>
-            <p className='text-white font-poppins font-medium text-lg'>
-              PostDoc
-            </p>
-            <p className='text-white font-poppins font-medium text-lg text-center'>
-              GIS and remote sensing
-            </p>
-            <div className='flex flex-row justify-around  items-center'>
-              <img src='/GlobalResearchExpertImages/France.svg' alt='France' />
-              <p className='text-white font-poppins font-medium text-lg'>
-                France
-              </p>
-            </div>
-            <div className='flex flex-row justify-between  items-center space-x-6'>
-              <img src='/GlobalResearchExpertImages/Mail.svg' alt='mail' />
-              <a
-                href='https://www.linkedin.com/in/urcel-kalenga-793467b5/'
-                target='_blank'
-              >
-                <img
-                  src='/GlobalResearchExpertImages/linkedin.svg'
-                  alt='linkedin'
-                />
-              </a>
-            </div>
+
+          {/* Expert Cards */}
+          <div className='flex flex-col lg:flex-row items-center justify-center gap-8 mb-8 animate-slide-up' style={{animationDelay: '0.2s'}}>
+            {experts.map((expert, index) => (
+              <div key={index} className='group w-full max-w-sm backdrop-blur-sm bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-6 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl'>
+                {/* Profile Image */}
+                <div className='flex justify-center mb-6'>
+                  <div className='relative'>
+                    <div className='absolute -inset-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-pulse'></div>
+                    <div className='relative w-32 h-32 rounded-full border-4 border-yellow-400 overflow-hidden bg-white'>
+                      <img
+                        className='w-full h-full object-cover'
+                        src={expert.image}
+                        alt={expert.name}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Expert Info */}
+                <div className='text-center space-y-3'>
+                  <h3 className='text-white font-bold text-xl'>{expert.name}</h3>
+                  <p className='text-blue-100 font-semibold text-lg'>{expert.role}</p>
+                  <p className='text-blue-50 text-sm leading-relaxed min-h-[60px] flex items-center justify-center'>{expert.specialization}</p>
+                  
+                  {/* Location */}
+                  <div className='flex items-center justify-center gap-2 py-2'>
+                    <img src='/GlobalResearchExpertImages/France.svg' alt='France' className='w-6 h-6' />
+                    <span className='text-white font-medium'>France</span>
+                  </div>
+
+                  {/* Contact Links */}
+                  <div className='flex items-center justify-center gap-4 pt-4'>
+                    <button className='p-3 bg-white/20 rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110'>
+                      <img src='/GlobalResearchExpertImages/Mail.svg' alt='Email' className='w-5 h-5' />
+                    </button>
+                    <a
+                      href={expert.linkedin}
+                      target='_blank'
+                      className='p-3 bg-white/20 rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110'
+                    >
+                      <img src='/GlobalResearchExpertImages/linkedin.svg' alt='LinkedIn' className='w-5 h-5' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className='bg-[#3052c3] w-full Laptop-lg:w-[25%] h-auto Laptop-lg:h-[450px] rounded-[32px] flex flex-col items-center justify-center space-y-2 p-4'>
-            <div className='rounded-full border-[6px] border-[#B88027] w-[120px] h-[120px] overflow-hidden text-black'>
-              <img
-                className='w-full h-full'
-                src='/GlobalResearchExpertImages/Mehtab.jpg'
-                alt='mehtab'
-              />
-            </div>
-            <p className='text-white font-poppins font-medium text-xl'>
-              Mehtab Alam SYED
-            </p>
-            <p className='text-white font-poppins font-medium text-lg'>
-              PhD Student
-            </p>
-            <p className='text-wh font-poppins font-medium text-lg text-center'>
-              Epidemiology (One Health), Text Mining, NLP, Information Retrieval
-            </p>
-            <div className='flex flex-row justify-around  items-center'>
-              <img src='/GlobalResearchExpertImages/France.svg' alt='France' />
-              <p className='text-white font-poppins font-medium text-lg'>
-                France
-              </p>
-            </div>
-            <div className='flex flex-row justify-between  items-center space-x-6'>
-              <img src='/GlobalResearchExpertImages/Mail.svg' alt='mail' />
-              <a
-                href='https://www.linkedin.com/in/syed-mehtab-alam-b4564a30/'
-                target='_blank'
-              >
-                <img
-                  src='/GlobalResearchExpertImages/linkedin.svg'
-                  alt='linkedin'
-                />
-              </a>
-            </div>
+
+          {/* Read More Button */}
+          <div className='text-center animate-slide-up' style={{animationDelay: '0.4s'}}>
+            <NavLink to={'/experts'}>
+              <button className='group bg-gradient-to-r from-slate-700 to-slate-800 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 flex items-center gap-3 mx-auto'>
+                Read More
+                <svg className='w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M13 7l5 5m0 0l-5 5m5-5H6' />
+                </svg>
+              </button>
+            </NavLink>
           </div>
-        </div>
-        <NavLink to={'/experts'} className='pb-4'>
-          {' '}
-          <Button className='mt-6 h-auto w-[100px] sm:h-[55px] sm:w-[160px] Tablet:w-[180px] rounded-[40px] bg-[#051731] text-[#F8F8F8] font-poppins font-medium text-lg Tablet:text-xl'>
-            Read More
-          </Button>
-        </NavLink>
-      </div>
-      <div className=' flex justify-center py-8 bg-[#ffffff]'>
-        <div className='bg-[#DC222C] flex items-center justify-center text-center px-6 py-4 rounded-full'>
-          <p className='text-white font-poppins font-medium text-xl Laptop-lg:text-4xl'>
-            Our Connected Universities and Colleges
-          </p>
         </div>
       </div>
 
+      {/* Universities Section */}
+      <div className='relative z-10 py-16'>
+        <div className='container mx-auto px-4'>
+          {/* Header */}
+          <div className='text-center mb-12 animate-fade-in' style={{animationDelay: '0.6s'}}>
+            <div className='inline-flex items-center justify-center bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-full shadow-xl transform transition-all duration-300 hover:scale-105'>
+              <h2 className='font-bold text-xl lg:text-3xl text-center'>
+                Our Connected Universities and Colleges
+              </h2>
+            </div>
+          </div>
 
-      <div className='w-full flex flex-col items-center justify-center py-8 bg-[#ffffff]'>
-        <div className='w-[80%] flex items-center justify-between flex-wrap md:flex-nowrap gap-4'>
-          <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
-          <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
-          <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
+          {/* University Cards */}
+          <div className='flex flex-col md:flex-row items-center justify-center gap-8 mb-8 animate-slide-up' style={{animationDelay: '0.8s'}}>
+            <div className='transform transition-all duration-300 hover:scale-105'>
+              <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
+            </div>
+            <div className='transform transition-all duration-300 hover:scale-105' style={{animationDelay: '0.1s'}}>
+              <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
+            </div>
+            <div className='transform transition-all duration-300 hover:scale-105' style={{animationDelay: '0.2s'}}>
+              <ChapterCard title={'Chandigarh University'} imageUrl={cuimg} />
+            </div>
+          </div>
+
+          {/* Read More Button */}
+          <div className='text-center animate-slide-up' style={{animationDelay: '1s'}}>
+            <NavLink to={'/chapter'}>
+              <button className='group bg-gradient-to-r from-slate-700 to-slate-800 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 flex items-center gap-3 mx-auto'>
+                Read More
+                <svg className='w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M13 7l5 5m0 0l-5 5m5-5H6' />
+                </svg>
+              </button>
+            </NavLink>
+          </div>
         </div>
-        <NavLink to={'/chapter'} className='pt-4'>
-          {' '}
-          <Button className='mt-6 h-auto w-[100px] sm:h-[55px] sm:w-[160px] Tablet:w-[180px] rounded-[40px] bg-[#051731] text-[#F8F8F8] font-poppins font-medium text-lg Tablet:text-xl'>
-            Read More
-          </Button>
-        </NavLink>
       </div>
     </div>
   );
