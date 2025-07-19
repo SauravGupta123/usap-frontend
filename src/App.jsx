@@ -12,7 +12,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 
 
-import ResearchInnovation from './Pages/ResearchInnovation';
+
 import { useState, useEffect } from 'react';
 import GoogleSignIn from './Components/GoogleLogin';
 import GlobalResearchExpert from './Pages/GlobalResearchExpert';

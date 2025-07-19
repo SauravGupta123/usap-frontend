@@ -196,7 +196,7 @@ function NavBar() {
       </NavLink>
       <NavLink
         // to='/gallery'
-        to='/comingsoon'
+        to='/gallery'
         activeStyle='active'
         className='w-auto px-3 h-[43px] hidden Laptop-lg:flex items-center justify-center font-poppins font-medium text-base rounded-[32px] '
         onMouseOver={handleMouseOver}
@@ -207,7 +207,7 @@ function NavBar() {
  
       <NavLink
         // to='/events'
-        to='/comingsoon'
+        to='/events'
         activeStyle='active'
         className='w-auto px-3 h-[43px] hidden Laptop-lg:flex items-center justify-center font-poppins font-medium text-base rounded-[32px] '
         onMouseOver={handleMouseOver}
@@ -403,7 +403,7 @@ function NavBar() {
           </NavLink>
           <NavLink
             // to='/team'
-            to='/comingsoon'
+          to='/team'
             activeStyle='active'
             className='w-auto px-4 h-[43px] flex items-center justify-center font-poppins font-medium text-base rounded-[32px]   '
             onMouseOver={handleMouseOver}
@@ -414,7 +414,7 @@ function NavBar() {
 
           <NavLink
             // to='/gallery'
-            to='/comingsoon'
+            to='/gallery'
             activeStyle='active'
             className='w-auto px-4 h-[43px] flex items-center justify-center font-poppins font-medium text-base rounded-[32px] '
             onMouseOver={handleMouseOver}
