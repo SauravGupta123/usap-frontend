@@ -7,6 +7,17 @@ USAP is a comprehensive platform designed to assist students in their journey to
 
 * * * * *
 
+ ### 🧪 **Test Credentials**
+ 
+ **🔑 Test User Login**  
+ **Email:** `gosirhello@gmail.com`  
+ **Password:** `gosir123`
+
+ **🛠️ Admin Login**  
+ **Username:** `usap444`  
+ **Password:** `isaf2024@@`
+
+
 **Table of Contents**
 ---------------------
 
