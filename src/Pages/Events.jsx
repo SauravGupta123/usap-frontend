@@ -17,9 +17,9 @@ const Events = () => {
           <img
             src={events}
             alt='teamlogo'
-            className='w-[15rem] sm:w-[18rem] lg:w-[22rem] z-10 absolute top-[2.5rem] sm:top-[2rem] md:top-[1.5rem] lg:top-[1rem] lg:left-[calc(50vw-25rem)] sm:left-[calc(50vw-20rem)] left-[calc(50vw-14rem)] transform transition-all duration-1000 hover:scale-110 animate-bounce-slow'
+            className='w-[15rem] sm:w-[18rem] lg:w-[22rem] z-10 absolute top-[2.5rem] sm:top-[2rem] md:top-[1.5rem] lg:top-[1rem] lg:left-[calc(50vw-25rem)] sm:left-[calc(50vw-20rem)] left-[calc(50vw-14rem)] transform transition-transform duration-300 hover:scale-105 animate-bounce-slow'
           />
-          <div className='w-auto px-[7rem] sm:px-[12rem] lg:px-[16rem] h-[70px] sm:h-[80px] lg:h-[90px] bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] flex items-center justify-center rounded-[2rem] relative top-16 shadow-2xl transform transition-all duration-500 hover:shadow-3xl hover:scale-105'>
+          <div className='w-auto px-[7rem] sm:px-[12rem] lg:px-[16rem] h-[70px] sm:h-[80px] lg:h-[90px] bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] flex items-center justify-center rounded-[2rem] relative top-16 shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]'>
             <Typography
               variant='h1'
               color='white'
@@ -49,12 +49,12 @@ const Events = () => {
 
       <div className='flex items-center justify-center px-4 py-8'>
         <div className='grid grid-cols-1 w-full max-w-7xl h-auto gap-8 sm:grid-cols-2 lg:grid-cols-3'>
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.1s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.1s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-events01-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         An educational innovation challenge where students and 
@@ -78,12 +78,12 @@ const Events = () => {
               </div>
             </div>
           </div>
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.2s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.15s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-events02-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         A comprehensive workshop series focusing on sustainable
@@ -107,12 +107,12 @@ const Events = () => {
               </div>
             </div>
           </div>
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.3s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.2s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-events03-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         A platform for students and education professionals to
@@ -138,12 +138,12 @@ const Events = () => {
             </div>
           </div>
 
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.4s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.25s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-team02-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         An exciting opportunity for students and education
@@ -168,12 +168,12 @@ const Events = () => {
               </div>
             </div>
           </div>
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.5s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.3s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-gallery-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         A showcase of cutting-edge educational technologies and
@@ -197,12 +197,12 @@ const Events = () => {
               </div>
             </div>
           </div>
-          <div className='group relative transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-slide-up' style={{animationDelay: '0.6s'}}>
-            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300'>
+          <div className='group relative transform transition-transform duration-200 hover:scale-[1.02] animate-slide-up' style={{animationDelay: '0.35s'}}>
+            <div className='relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200'>
               <div className='bg-about-image bg-cover bg-center h-[16rem] w-full relative'>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300'></div>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent group-hover:from-black/80 transition-colors duration-200'></div>
                 <div className='absolute inset-0 flex items-center justify-center p-6'>
-                  <div className='text-white text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-100'>
+                  <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out opacity-0 group-hover:opacity-100'>
                     <div className='bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20'>
                       <p className='text-sm leading-relaxed'>
                         A creative photography contest capturing the essence of
